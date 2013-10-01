@@ -1,7 +1,7 @@
 SoundBox
 ========
 
-TML5 audio library with fallback to Flash
+HTML5 audio library with fallback to Flash
 
 Options
 =======
