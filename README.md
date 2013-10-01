@@ -46,7 +46,7 @@ Utils
 
 Constructor
 ===========
-	var sound = var sound = new SoundBox.Sound()
+	var sound = new SoundBox.Sound()
 
 Methods
 =======
