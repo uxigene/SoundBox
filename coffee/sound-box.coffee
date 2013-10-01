@@ -73,7 +73,7 @@ class SoundBox
 
         SoundBox.callbacks.onReady = =>
           @flash = @getFlashObject()
-          @flash.set("src", "") # don't know why but if not set some param init is very slowly :)
+          @flash.set("src", "")
 
     appendFlash: ->
       flashHtml = SoundBox.defaults.flashHtml.replace(/("%url%")/g, SoundBox.defaults.flashUrl+"?v="+Math.random()).replace(/("%id%")/g, SoundBox.defaults.flashObjectId)
