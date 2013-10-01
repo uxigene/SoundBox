@@ -26,7 +26,7 @@ $(function() {
 	var sound = new SoundBox.Sound()
 
 	$("#play").on("click", function(ev) {
-		sound.play("my_sound.mp3")
+		sound.play("/my_sound.mp3")
 	})
 
 	$("#pause").on("click", function(ev) {
