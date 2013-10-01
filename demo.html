@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Demo - SoundBox Library</title>
+	<style type="text/css">
+		.player {
+			font 					: normal 13px "Helvetica Neue", Helvetica, Arial, sans-serif;
+			width 					: 500px;
+			background-color 		: #eee;
+			padding 				: 15px;
+			-webkit-border-radius 	: 5px;
+			-moz-border-radius 		: 5px;
+			border-radius 			: 5px;
+		}
+		.player .timer{
+			float 					: right;
+			margin-top 				: 7px;
+			color 					: #444;
+		}
+		.player .controls .button {
+			background-color 		: #999;
+			border 					: none;
+			-webkit-border-radius 	: 5px;
+			-moz-border-radius		: 5px;
+			border-radius 			: 5px;
+			padding					: 5px 10px;
+			color 					: #fff;
+			cursor					: pointer;
+		}
+		.player .controls .button:hover {
+			background-color 		: #f88a00;
+		}
+		.player .controls .button.active {
+			background-color 		: #f88a00;
+		}
+		.player .progress {
+			position 				: relative;
+			height 					: 3px;
+			margin-top 				: 10px;
+			background-color 		: #999;
+			cursor					: pointer; 
+		}
+		.player .progress .buffer-progress {
+			width 					: 0%;
+			height 					: 100%;
+			background-color 		: #444;
+		}
+		.player .progress .play-progress {
+			position 				: absolute;
+			top 					: 0;
+			width 					: 0%;
+			height 					: 100%;
+			background-color 		: #f88a00;
+		}
+	</style>
+</head>
+<body>
+	<div id="player" class="player">
+		<div class="timer" id="timer"></div>
+		<div class="controls">
+			<button class="button" id="play">Play</button>
+			<button class="button" id="pause">Pause</button>
+			<button class="button" id="stop">Stop</button>
+			<button class="button" id="mute">Mute</button>
+		</div>
+		<div class="progress" id="progress">
+			<div class="buffer-progress" id="buffer-progress"></div>
+			<div class="play-progress" id="play-progress"></div>
+		</div>
+	</div>
+
+	<script src="http://localhost:35729/livereload.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<script src="./assets/js/sound-box.js"></script>
+	<script src="./demo.js"></script>
+	
+</body>
+</html>
