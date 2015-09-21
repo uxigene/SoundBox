@@ -41,7 +41,7 @@ Utils
 =====
 
 	SoundBox.utils.toPercent(value, total, decimal)
-	SoundBox.utils.toPercent(percent, total, decimal)
+	SoundBox.utils.fromPercent(percent, total, decimal)
 	SoundBox.utils.humanizeTimer(time, withHours)
 
 Constructor
